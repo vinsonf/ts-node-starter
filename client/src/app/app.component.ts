@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
-import * as io from 'socket.io-client';
 import {SocketService} from "./services/socket.service";
-
+import {CLIENT_MESSAGES} from "../../../shared/dist";
 
 @Component({
   selector: 'app-root',
@@ -15,6 +14,7 @@ export class AppComponent {
     private socketService: SocketService,
   ) {
     this.socketService.setupConnection();
+    console.log(CLIENT_MESSAGES);
   }
 
 }

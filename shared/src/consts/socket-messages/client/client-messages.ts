@@ -1,0 +1,5 @@
+const MESSAGE_CONNECT = '(CLIENT): [MESSAGE] CONNECT';
+
+export const CLIENT_MESSAGES = {
+    MESSAGE_CONNECT,
+}

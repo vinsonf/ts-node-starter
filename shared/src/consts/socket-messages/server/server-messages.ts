@@ -1,0 +1,7 @@
+const MESSAGE_CONNECT = '(SERVER): [MESSAGE] CONNECT';
+
+export const SERVER_MESSAGES = {
+    MESSAGE_CONNECT,
+}
+
+
