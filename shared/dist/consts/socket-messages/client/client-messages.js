@@ -1,7 +1,11 @@
 "use strict";
 exports.__esModule = true;
 exports.CLIENT_MESSAGES = void 0;
-var MESSAGE_CONNECT = '(CLIENT): [MESSAGE] CONNECT';
+var NAME = 'CLIENT:';
+var CONNECT = 'connect';
+var DISCONNECT = 'disconnect';
 exports.CLIENT_MESSAGES = {
-    MESSAGE_CONNECT: MESSAGE_CONNECT
+    NAME: NAME,
+    CONNECT: CONNECT,
+    DISCONNECT: DISCONNECT
 };

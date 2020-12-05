@@ -1,5 +1,9 @@
-const MESSAGE_CONNECT = '(CLIENT): [MESSAGE] CONNECT';
+const NAME = 'CLIENT:'
+const CONNECT = 'connect';
+const DISCONNECT = 'disconnect';
 
 export const CLIENT_MESSAGES = {
-    MESSAGE_CONNECT,
+    NAME,
+    CONNECT,
+    DISCONNECT,
 }

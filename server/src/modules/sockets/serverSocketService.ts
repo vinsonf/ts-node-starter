@@ -1,5 +1,6 @@
 import {Server} from "socket.io";
 import {Server as HttpServer} from "http";
+import {CLIENT_MESSAGES} from "../../../../shared/dist";
 
 export class ServerSocketService {
     public io: Server;
@@ -14,14 +15,20 @@ export class ServerSocketService {
     }
 
     setup() {
-        this.io.on('connect', function (data) {
-            console.log('connected', 'socketID', data.id);
-        });
-        this.io.on('connection', (socket) => {
-            console.log('connected2', 'socketID', socket.id)
+        this.io.on(CLIENT_MESSAGES.CONNECT, (socket) => {
+            console.log(
+                CLIENT_MESSAGES.NAME,
+                CLIENT_MESSAGES.CONNECT,
+                socket.id
+            );
             this.data.sockets[socket.id] = '';
             this.io.of('/').emit('server: someone connected', {data: this.data});
-            socket.on('disconnect', () => {
+            socket.on(CLIENT_MESSAGES.DISCONNECT, () => {
+                console.log(
+                    CLIENT_MESSAGES.NAME,
+                    CLIENT_MESSAGES.DISCONNECT,
+                    socket.id
+                );
                 delete this.data.sockets[socket.id];
                 this.io.of('/').emit('server: someone disconnected', {data: this.data})
             });

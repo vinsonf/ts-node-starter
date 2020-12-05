@@ -1,4 +1,6 @@
 export declare const SERVER_MESSAGES: {
-    MESSAGE_CONNECT: string;
+    NAME: string;
+    CONNECT: string;
+    DISCONNECT: string;
 };
 //# sourceMappingURL=server-messages.d.ts.map

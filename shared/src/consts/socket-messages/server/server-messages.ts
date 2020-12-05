@@ -1,7 +1,11 @@
-const MESSAGE_CONNECT = '(SERVER): [MESSAGE] CONNECT';
+const NAME = 'SERVER:';
+const CONNECT = 'connect';
+const DISCONNECT = 'disconnect';
 
 export const SERVER_MESSAGES = {
-    MESSAGE_CONNECT,
+    NAME,
+    CONNECT,
+    DISCONNECT,
 }
 
 
