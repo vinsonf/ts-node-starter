@@ -21,9 +21,16 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var app_1 = require("./modules/core/app");
 var http = __importStar(require("http"));
+var socket_io_1 = require("socket.io");
 var port = normalizePort(process.env.PORT || '3000');
 app_1.app.set('port', port);
 var server = http.createServer(app_1.app);
+var io = new socket_io_1.Server(server, { cors: {
+        origin: '*'
+    } });
+io.on('connect', function (data) {
+    console.log('connected', 'data', data);
+});
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);

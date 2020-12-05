@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import * as io from 'socket.io-client';
+import {SocketService} from "./services/socket.service";
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +10,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'client';
+
+  constructor(
+    private socketService: SocketService,
+  ) {
+    this.socketService.setupConnection();
+  }
+
 }

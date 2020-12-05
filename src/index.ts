@@ -1,8 +1,21 @@
 import {app} from "./modules/core/app";
 import * as http from "http";
+import { Server } from "socket.io";
+
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 const server = http.createServer(app);
+
+
+const io = new Server(server, { cors: {
+    origin: '*'
+    }});
+
+io.on('connect', function (data) {
+    console.log('connected', 'data', data);
+})
+
+
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
