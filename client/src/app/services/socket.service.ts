@@ -36,6 +36,7 @@ export class SocketService {
         SERVER_MESSAGES.NAME,
         SERVER_MESSAGES.CONNECT,
         data,
+        this.socket.id,
       );
     });
     this.listen(SERVER_MESSAGES.DISCONNECT).subscribe((data) => {

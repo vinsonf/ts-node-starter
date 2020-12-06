@@ -14,7 +14,6 @@ export class AppComponent {
     private socketService: SocketService,
   ) {
     this.socketService.setupConnection();
-    console.log(CLIENT_MESSAGES);
   }
 
 }
