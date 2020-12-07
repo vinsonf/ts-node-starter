@@ -19,6 +19,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var dotenv = __importStar(require("dotenv"));
+dotenv.config();
+console.log(process.env.DB_URI, 'uri');
 var app_1 = require("./modules/core/app");
 var http = __importStar(require("http"));
 var serverSocketService_1 = require("./modules/sockets/serverSocketService");

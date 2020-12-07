@@ -21,4 +21,4 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var shell = __importStar(require("shelljs"));
 // Copy all the view templates
-shell.cp("-R", "client/dist", "build/public");
+shell.cp("-R", "../client/dist", "build/public");

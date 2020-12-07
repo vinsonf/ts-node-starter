@@ -1,3 +1,9 @@
+import * as dotenv from 'dotenv';
+
+dotenv.config();
+
+console.log(process.env.DB_URI, 'uri');
+
 import {app} from "./modules/core/app";
 import * as http from "http";
 import {ServerSocketService} from "./modules/sockets/serverSocketService";

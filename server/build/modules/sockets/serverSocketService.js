@@ -11,20 +11,28 @@ var ServerSocketService = /** @class */ (function () {
         this.io = new socket_io_1.Server(server, { cors: {
                 origin: '*'
             } });
-        this.setup();
+        this.setupConnect();
     }
-    ServerSocketService.prototype.setup = function () {
+    ServerSocketService.prototype.setupConnect = function () {
         var _this = this;
         this.io.on(dist_1.CLIENT_MESSAGES.CONNECT, function (socket) {
             console.log(dist_1.CLIENT_MESSAGES.NAME, dist_1.CLIENT_MESSAGES.CONNECT, socket.id);
-            _this.data.sockets[socket.id] = '';
             _this.io.of('/').emit('server: someone connected', { data: _this.data });
-            socket.on(dist_1.CLIENT_MESSAGES.DISCONNECT, function () {
-                console.log(dist_1.CLIENT_MESSAGES.NAME, dist_1.CLIENT_MESSAGES.DISCONNECT, socket.id);
-                delete _this.data.sockets[socket.id];
-                _this.io.of('/').emit('server: someone disconnected', { data: _this.data });
-            });
+            _this.setupDisconnect(socket);
         });
+    };
+    ServerSocketService.prototype.setupDisconnect = function (socket) {
+        var _this = this;
+        socket.on(dist_1.CLIENT_MESSAGES.DISCONNECT, function () {
+            console.log(dist_1.CLIENT_MESSAGES.NAME, dist_1.CLIENT_MESSAGES.DISCONNECT, socket.id);
+            _this.io.of('/').emit('server: someone disconnected', { data: _this.data });
+        });
+    };
+    ServerSocketService.prototype.saveSocket = function (socket) {
+        this.data.sockets[socket.id] = '';
+    };
+    ServerSocketService.prototype.deleteSocket = function (socket) {
+        delete this.data.sockets[socket.id];
     };
     return ServerSocketService;
 }());

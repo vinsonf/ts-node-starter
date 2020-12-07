@@ -19,6 +19,8 @@
     "@angular/platform-browser": "~9.1.11",
     "@angular/platform-browser-dynamic": "~9.1.11",
     "@angular/router": "~9.1.11",
+    "@ngrx/store": "^10.1.0",
+    "@ngrx/store-devtools": "^10.1.0",
     "@types/socket.io-client": "^1.4.34",
     "rxjs": "~6.5.4",
     "socket.io-client": "^3.0.3",
