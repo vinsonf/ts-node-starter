@@ -32,13 +32,13 @@
         "affectsGlobalScope": false
       },
       "./src/consts/socket-messages/client/client-messages.ts": {
-        "version": "edb1d080d5ca10855a6bf5a105a8bd1861bbe41b6c0e4d9be95f181d2fe87581",
-        "signature": "c15acf5a8da68ebc38d9a088202ce13223b680e38b7ed4c39193b7d83a36d5d7",
+        "version": "1c543c6a6bdd23543fead3b08fb27061af4225631a991b236925df4d18e0e42d",
+        "signature": "2b8efacf8f5f18d8f50b09fe3ae73df75615eb123c5b0390bf12cec70bda3a53",
         "affectsGlobalScope": false
       },
       "./src/consts/socket-messages/server/server-messages.ts": {
-        "version": "4caad9e03a7ae01af0d448c1ebdc586babce829ba5077ec92ba9c04ef9d396d4",
-        "signature": "557d1c348a6d1f90fbb789ddf94fcf72129d85c8a95d45b410c61dec4aa665d4",
+        "version": "08a66692967859fa60f10e04b13fdeb46a53b0463a479bd0f11d940b9d8eb69a",
+        "signature": "d6613a54bf64df5a5a6607cb867e9f4803f99fd5f7eeb16cdedb2c2779d1a14a",
         "affectsGlobalScope": false
       },
       "./src/index.ts": {

@@ -60,15 +60,24 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/shared/src/test.js" />
-        <option value="$PROJECT_DIR$/shared/src/test.d.ts.map" />
-        <option value="$PROJECT_DIR$/shared/src/test.d.ts" />
-      </list>
-    </option>
   </component>
   <component name="WindowStateProjectService">
+    <state width="1771" height="318" key="GridCell.Tab.0.bottom" timestamp="1607392751816">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1607392751816" />
+    <state width="1771" height="318" key="GridCell.Tab.0.center" timestamp="1607392751814">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1607392751814" />
+    <state width="1771" height="318" key="GridCell.Tab.0.left" timestamp="1607392751813">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1607392751813" />
+    <state width="1771" height="318" key="GridCell.Tab.0.right" timestamp="1607392751815">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="1771" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1607392751815" />
     <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1607142068323">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

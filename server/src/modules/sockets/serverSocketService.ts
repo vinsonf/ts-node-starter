@@ -1,13 +1,16 @@
 import {Server, Socket} from "socket.io";
 import {Server as HttpServer} from "http";
-import {CLIENT_MESSAGES} from "../../../../shared/dist";
+import {CLIENT_MESSAGES, SERVER_MESSAGES} from "../../../../shared/dist";
+import {DbService} from "../db/dbService";
 
 export class ServerSocketService {
     public io: Server;
+    public db: DbService;
     public data: any = {
         sockets: {},
     }
     constructor(server: HttpServer) {
+        this.db = new DbService();
         this.io = new Server(server, { cors: {
             origin: '*'
         }});
@@ -21,8 +24,10 @@ export class ServerSocketService {
                 CLIENT_MESSAGES.CONNECT,
                 socket.id
             );
+
             this.io.of('/').emit('server: someone connected', {data: this.data});
             this.setupDisconnect(socket);
+            this.setupGetTrucks(socket);
         });
     }
 
@@ -42,6 +47,19 @@ export class ServerSocketService {
 
     deleteSocket(socket: Socket){
         delete this.data.sockets[socket.id];
+    }
+
+    setupGetTrucks(socket: Socket) {
+        socket.on(CLIENT_MESSAGES.GET_TRUCKS, () => {
+            console.log(
+                CLIENT_MESSAGES.NAME,
+                CLIENT_MESSAGES.GET_TRUCKS,
+                socket.id
+            );
+            this.db.getTrucks().then((trucks) => {
+                socket.emit(SERVER_MESSAGES.RES_TRUCKS, trucks)
+            });
+        });
     }
 }
 

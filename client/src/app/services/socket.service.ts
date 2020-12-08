@@ -1,7 +1,7 @@
 import {Injectable, isDevMode} from '@angular/core';
 import {io} from 'socket.io-client/build/index';
 import {Observable} from "rxjs";
-import {SERVER_MESSAGES} from "../../../../shared/dist";
+import {CLIENT_MESSAGES, SERVER_MESSAGES} from "../../../../shared/dist";
 
 @Injectable({
   providedIn: 'root'
@@ -38,11 +38,19 @@ export class SocketService {
         data,
         this.socket.id,
       );
+      this.socket.emit(CLIENT_MESSAGES.GET_TRUCKS);
     });
     this.listen(SERVER_MESSAGES.DISCONNECT).subscribe((data) => {
       console.log(
         SERVER_MESSAGES.NAME,
         SERVER_MESSAGES.DISCONNECT,
+        data,
+      );
+    });
+    this.listen(SERVER_MESSAGES.RES_TRUCKS).subscribe((data) => {
+      console.log(
+        SERVER_MESSAGES.NAME,
+        SERVER_MESSAGES.RES_TRUCKS,
         data,
       );
     });

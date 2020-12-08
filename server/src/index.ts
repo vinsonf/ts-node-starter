@@ -4,9 +4,13 @@ dotenv.config();
 
 console.log(process.env.DB_URI, 'uri');
 
+
+
 import {app} from "./modules/core/app";
 import * as http from "http";
 import {ServerSocketService} from "./modules/sockets/serverSocketService";
+
+
 
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
