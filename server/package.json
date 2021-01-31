@@ -40,6 +40,8 @@
     "mongoose": "^5.11.4",
     "morgan": "~1.9.1",
     "node-sass-middleware": "0.11.0",
+    "pg": "^8.5.1",
+    "sequelize": "^6.5.0",
     "socket.io": "^3.0.3"
   }
 }
