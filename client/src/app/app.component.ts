@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import {SocketService} from "./services/socket.service";
 import {CLIENT_MESSAGES} from "../../../shared/dist";
+import {ApiService} from "./services/api.service";
+import {ApiPostAuthLogin} from "./services/endpoints/auth.requests";
 
 @Component({
   selector: 'app-root',
@@ -12,9 +14,16 @@ export class AppComponent {
 
   constructor(
     private socketService: SocketService,
+    private apiService: ApiService,
   ) {
     this.socketService.setupConnection();
 
+  }
+
+  public login() {
+    this.apiService.request(
+      new ApiPostAuthLogin({email: 'what', password: 'yes'})
+    ).subscribe((response) => console.log(response))
   }
 
 }
