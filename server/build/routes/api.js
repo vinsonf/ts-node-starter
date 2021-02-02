@@ -39,13 +39,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var express_1 = require("express");
 var dbService_1 = require("../modules/db/dbService");
 var apiRouter = express_1.Router();
-/* GET api listing. */
-apiRouter.get('/*', function (req, res, next) {
-    res.send('respond with a resource');
-});
 apiRouter.post('/v1/public/login', function (req, res, next) {
     console.log('login', req.body);
-    res.json([]);
+    res.json({ user: '' });
 });
 apiRouter.post('/v1/secure/users', function (req, res, next) {
     return __awaiter(this, void 0, void 0, function () {
@@ -63,5 +59,37 @@ apiRouter.post('/v1/secure/users', function (req, res, next) {
             }
         });
     });
+});
+apiRouter.post('/v1/secure/user-create', function (req, res, next) {
+    return __awaiter(this, void 0, void 0, function () {
+        var user;
+        return __generator(this, function (_a) {
+            console.log('POST: user-create', req.body);
+            user = dbService_1.dbService.createUser(req.body);
+            res.json(user);
+            return [2 /*return*/];
+        });
+    });
+});
+apiRouter.post('/v1/secure/role-types', function (req, res, next) {
+    return __awaiter(this, void 0, void 0, function () {
+        var roleTypes;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    console.log('POST: role-type', req.body);
+                    return [4 /*yield*/, dbService_1.dbService.getRoleTypes()];
+                case 1:
+                    roleTypes = _a.sent();
+                    res.json(roleTypes);
+                    console.log('POST: role-type', req.body);
+                    return [2 /*return*/];
+            }
+        });
+    });
+});
+/* GET api listing. */
+apiRouter.get('/*', function (req, res, next) {
+    res.json('respond with a resource');
 });
 exports.default = apiRouter;

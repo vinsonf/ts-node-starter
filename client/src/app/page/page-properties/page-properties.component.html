@@ -1,0 +1,31 @@
+<app-layout-table-container>
+  <div class="basic-card-list">
+    <ng-container *ngFor="let property of (properties$ | async);  let i = index;">
+      <div class="basic-card">
+        <div class="basic-card-property-image">
+          <div class="property-icons-container">
+            <!-- <app-present-svg [image]="svgImages.smallTrashIcon"></app-present-svg> -->
+            <svg width="90px" height="40px"></svg>
+            <app-image-svg [image]="svgImages.smallEditIcon"></app-image-svg>
+            <!-- <app-present-svg [image]="svgImages.smallEditIcon" (click)="editProperty(property)"></app-present-svg> -->
+          </div>
+          <div style="position: relative; right: 65px">
+            <app-image-svg [image]="svgImages.circleLogo"></app-image-svg>
+          </div>
+        </div>
+        <div class="basic-card-property-body">
+          <div class="property-name">{{property.nameOfProperty | pipeTruncateText:25}}</div>
+          <div class="basic-card-property-address">{{property.street | pipeTruncateText:20}} {{property.city | pipeTruncateText:10}}, {{property.state}} {{property.zip | pipeTruncateText:5}}</div>
+          <div class="basic-card-property-contact">
+            <div>{{property.owner.firstName | pipeTruncateText:20}} {{property.owner.lastName | pipeTruncateText:20}}</div>
+            <div>{{property.owner.phone || property.owner.email}}</div>
+          </div>
+        </div>
+        <div class="basic-card-property-status">
+          <div class="basic-card-property-status-rent">Monthly Rent</div>
+          <div class="basic-card-property-status-amount">${{property.principal}}</div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</app-layout-table-container>

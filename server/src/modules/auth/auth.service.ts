@@ -1,10 +1,33 @@
-import * as bcrypt from 'bcryptjs';
+import {compare, genSalt, hash as bHash} from 'bcryptjs';
 
-export default class Auth {
+const SALT_WORK_FACTOR = 10;
 
-    public static hashPassword(password: string, rounds: number, callback: (error: Error, hash: string) => void) : void {
-        bcrypt.hash(password, rounds, (error, hash) => {
-            callback(error, hash);
+class AuthService {
+    passwordHashString(candidatePassword: string) {
+        return new Promise(function(resolve, reject) {
+            genSalt(SALT_WORK_FACTOR, function(err: Error, salt: string) {
+                if (err) {
+                    reject(err);
+                }
+                bHash(candidatePassword, salt, function(errorHash: Error, hash: string) {
+                    if (errorHash) {
+                        reject(errorHash);
+                    }
+                    resolve(hash);
+                });
+            });
+        });
+    }
+    passwordCompareToHash(candidatePassword: string, hash: string) {
+        return new Promise((resolve, reject) => {
+            compare(candidatePassword, hash, function(err: Error, isMatch: boolean) {
+                if (err) {
+                    reject(err);
+                }
+                resolve(isMatch);
+            });
         });
     }
 }
+
+export const authService = new AuthService();

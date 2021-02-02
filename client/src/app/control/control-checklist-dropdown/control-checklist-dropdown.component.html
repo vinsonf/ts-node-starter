@@ -1,0 +1,19 @@
+
+
+<ng-container *ngIf="!controlName">
+  <select class="profile-inputs">
+    <ng-content></ng-content>
+  </select>
+</ng-container>
+
+<ng-container *ngIf="controlName">
+  <ng-container *ngIf="label">
+    <label class="form-label-text">{{label}}</label>
+  </ng-container>
+  <form [formGroup]="form">
+    <select class="profile-inputs"  [formControlName]="controlName">
+      <ng-content></ng-content>
+    </select>
+  </form>
+
+</ng-container>

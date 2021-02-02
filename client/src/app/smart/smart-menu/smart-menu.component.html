@@ -1,10 +1,12 @@
 <div class="side-menu-container">
-
-  <a  class="side-menu-link">
+<ng-container *ngFor="let link of linkRoutes;">
+  <a  (click)="menuNavigate(link)" class="side-menu-link">
     <div class="side-menu-icon">
-      <app-image-svg [image]="svgImages.profileIcon"></app-image-svg>
+      <app-image-svg [image]="link.icon"></app-image-svg>
     </div>
-    <span class="side-text">PROFILE</span>
+    <span class="side-text">{{link.text}}</span>
   </a>
+
+</ng-container>
 
 </div>

@@ -3,6 +3,8 @@ import {SvgImages} from "../../image/image-svg/image-svg.component";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {ActivatedRoute} from "@angular/router";
 import {ValidationService} from "../../services/validation.service";
+import {ApiService} from "../../services/api.service";
+import {ApiUserCreate} from "../../services/endpoints/api.user.create";
 
 @Component({
   selector: 'app-page-user-new-edit',
@@ -258,6 +260,7 @@ export class PageUserNewEditComponent implements OnInit {
     private route: ActivatedRoute,
     private fb: FormBuilder,
     private validationService: ValidationService,
+    private apiService: ApiService,
   ) {
 
 
@@ -282,16 +285,15 @@ export class PageUserNewEditComponent implements OnInit {
     this.form = this.fb.group({
       firstName: [{value: firstName, disabled: this.disabled}, Validators.required],
       lastName: [{value: lastName, disabled: this.disabled}, Validators.required],
-      phone: [phone, [this.validationService.validPhoneNumber(false)]],
+      phone: [phone, [this.validationService.validPhoneNumber()]],
       email: [email, [Validators.required, this.validationService.ValidEmail(true)]],
       street: [street],
       city: [city],
-      zip: [zip, [this.validationService.validZipcode(false)]],
+      zip: [zip, [this.validationService.validZipcode()]],
       state: [state],
-      isActive: true,
       password: [password],
       id: [id],
-      roleType: [{value: roleType.id, disabled: true}, Validators.required]
+      roleType: [{value: roleType.id}, Validators.required]
     });
   }
 
@@ -304,7 +306,15 @@ export class PageUserNewEditComponent implements OnInit {
   }
 
   submit() {
-    console.log('edit');
+    if (this.form.valid) {
+      console.log('form submitted');
+      this.apiService.request( new ApiUserCreate(this.form.value)).subscribe();
+    } else {
+      Object.keys(this.form.controls).forEach(field => {
+        const control = this.form.get(field);
+        control?.markAsTouched({ onlySelf: true });
+      });
+    }
   }
 
 }

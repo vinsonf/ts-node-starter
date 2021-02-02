@@ -11,9 +11,10 @@
     </thead>
     <tbody>
             <ng-container *ngFor="let item of data;  let i = index;">
+
               <tr class="users-table-row" [ngClass]="styleRow(i)">
                 <ng-container *ngFor="let header of config.headers">
-                  <ng-container *ngIf="header.field">
+                  <ng-container *ngIf="item && header.field">
                     <td class="property-gray-edit-button-text users-table-row-text-space" style="overflow: hidden">{{item[header.field]}}</td>
                   </ng-container>
 

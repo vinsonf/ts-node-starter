@@ -5,6 +5,8 @@ import { ControlFormActionButtonComponent } from './control-form-action-button/c
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {SmartTableComponent} from "../smart/smart-table/smart-table.component";
 import {TextMaskDirective} from "../directives/text-mask/text-mask.directive";
+import { ControlRoleTypeSelectorComponent } from './control-role-type-selector/control-role-type-selector.component';
+import { ControlChecklistDropdownComponent } from './control-checklist-dropdown/control-checklist-dropdown.component';
 
 
 
@@ -14,12 +16,15 @@ import {TextMaskDirective} from "../directives/text-mask/text-mask.directive";
     ControlFormActionButtonComponent,
     SmartTableComponent,
     TextMaskDirective,
+    ControlRoleTypeSelectorComponent,
+    ControlChecklistDropdownComponent,
   ],
   exports: [
     ControlTextInputComponent,
     ControlFormActionButtonComponent,
     SmartTableComponent,
     TextMaskDirective,
+    ControlRoleTypeSelectorComponent,
   ],
   imports: [
     CommonModule,

@@ -59,32 +59,63 @@ var DbService = /** @class */ (function () {
             return __generator(this, function (_a) {
                 console.log('SYNC SUCCESS');
                 setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
-                    var roleType, user, profile, users;
+                    var admin, ds, de, aa, po, cp, user, profile, users;
                     return __generator(this, function (_a) {
                         switch (_a.label) {
                             case 0: return [4 /*yield*/, role_type_model_1.RoleType.create({
-                                    nicename: 'System Admin'
+                                    nicename: 'System Admin',
+                                    type: 'SYSTEM_ADMIN',
                                 })];
                             case 1:
-                                roleType = _a.sent();
+                                admin = _a.sent();
+                                return [4 /*yield*/, role_type_model_1.RoleType.create({
+                                        nicename: 'Department Supervisor',
+                                        type: 'DEPARTMENT_SUPER',
+                                    })];
+                            case 2:
+                                ds = _a.sent();
+                                return [4 /*yield*/, role_type_model_1.RoleType.create({
+                                        nicename: 'Department Employee',
+                                        type: 'DEPARTMENT_EMPLOYEE',
+                                    })];
+                            case 3:
+                                de = _a.sent();
+                                return [4 /*yield*/, role_type_model_1.RoleType.create({
+                                        nicename: 'Administrative Assistant',
+                                        type: 'ADMIN_ASSIST',
+                                    })];
+                            case 4:
+                                aa = _a.sent();
+                                return [4 /*yield*/, role_type_model_1.RoleType.create({
+                                        nicename: 'Property Owner',
+                                        type: 'PROPERTY_OWNER',
+                                    })];
+                            case 5:
+                                po = _a.sent();
+                                return [4 /*yield*/, role_type_model_1.RoleType.create({
+                                        nicename: 'Community Partner',
+                                        type: 'COMMUNITY_PARTNER',
+                                    })];
+                            case 6:
+                                cp = _a.sent();
                                 return [4 /*yield*/, user_model_1.User.create({
                                         email: 'jane',
                                         // @ts-ignore
-                                        roleTypeId: roleType.id,
+                                        roleTypeId: admin.id,
                                     })];
-                            case 2:
+                            case 7:
                                 user = _a.sent();
                                 return [4 /*yield*/, profile_model_1.Profile.create({
                                         firstName: 'jane\'s profile',
                                         // @ts-ignore
                                         userId: user.id
                                     })];
-                            case 3:
+                            case 8:
                                 profile = _a.sent();
                                 return [4 /*yield*/, profile_model_1.Profile.findAll({
                                         include: [user_model_1.User],
                                     })];
-                            case 4:
+                            case 9:
                                 users = _a.sent();
                                 users.forEach(function (user) { return console.log(user.toJSON()); });
                                 return [2 /*return*/];
@@ -116,6 +147,45 @@ var DbService = /** @class */ (function () {
                         users = _a.sent();
                         console.log('user', users);
                         return [2 /*return*/, users];
+                }
+            });
+        });
+    };
+    DbService.prototype.createUser = function (body) {
+        return __awaiter(this, void 0, void 0, function () {
+            var user, profile;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, user_model_1.User.create({
+                            email: body.email,
+                            // @ts-ignore
+                            roleTypeId: Number(body.roleType),
+                        }, { include: [profile_model_1.Profile, role_type_model_1.RoleType] })];
+                    case 1:
+                        user = _a.sent();
+                        return [4 /*yield*/, profile_model_1.Profile.create({
+                                firstName: body.firstName,
+                                lastName: body.lastName,
+                                // @ts-ignore
+                                userId: user.id
+                            })];
+                    case 2:
+                        profile = _a.sent();
+                        return [2 /*return*/, user];
+                }
+            });
+        });
+    };
+    DbService.prototype.getRoleTypes = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var roleTypes;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, role_type_model_1.RoleType.findAll({})];
+                    case 1:
+                        roleTypes = _a.sent();
+                        console.log('roleTypes', roleTypes);
+                        return [2 /*return*/, roleTypes];
                 }
             });
         });

@@ -31,6 +31,18 @@ const routes: Routes = [
             (m) => m.PageUserNewEditModule
           ),
       },
+      {
+        path: 'properties',
+        data: {
+          title: 'Properties',
+          viewPath: 'properties',
+          newButton: true,
+        },
+        loadChildren: () =>
+          import('../page-properties/page-properties.module').then(
+            (m) => m.PagePropertiesModule
+          ),
+      },
     ]
   },
 

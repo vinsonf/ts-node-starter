@@ -1,0 +1,10 @@
+<app-control-checklist-dropdown label="Role Type" [form]="form" [controlName]="controlName">
+  <option value="">
+    Please Select...
+  </option>
+  <ng-container *ngFor="let roleType of roleTypes$ | async;  let i = index;">
+    <option [value]="roleType.id">
+      {{roleType.nicename}}
+    </option>
+  </ng-container>
+</app-control-checklist-dropdown>

@@ -1,6 +1,12 @@
 <form [formGroup]="form">
-  <div class="form-label-text"  >{{label}}*</div>
+  <div class="form-label-text" [ngClass]="{errorLabel: form.get(controlName)?.errors && form.get(controlName)?.touched || null }" >
+    {{label}}
+
+    <ng-container *ngIf="validatorRequired">
+      *
+    </ng-container>
+  </div>
   <div>
-    <input type="text" [formControlName]="controlName" class="input-textfield" required/>
+    <input type="text" [formControlName]="controlName" class="input-textfield" />
   </div>
 </form>

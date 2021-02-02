@@ -13,9 +13,9 @@ export class PipeUsersTablePipe implements PipeTransform {
       console.log('value', value)
       return value.map((user: any) => {
         return {
-          name: `${user.profile.firstName} ${user.profile.lastName}`,
+          name: `${user.profile?.firstName} ${user.profile?.lastName}`,
           email: user.email,
-          roleType: user.roleType.nicename
+          roleType: user.roleType?.nicename
         }
       })
 

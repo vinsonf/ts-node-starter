@@ -13,6 +13,7 @@ export class ValidationService {
 
   public ValidEmail(isRequired: boolean): ValidatorFn {
     return (control: AbstractControl): ValidationErrors | null => {
+
       if (!control.value) {
         return isRequired ? { incorrectMailFormat: 'Email is required.' } : null;
       }
@@ -33,29 +34,27 @@ export class ValidationService {
     };
   }
 
-  public validPhoneNumber(isRequired?: boolean): ValidatorFn {
+  public validPhoneNumber(): ValidatorFn {
     return (control: AbstractControl): ValidationErrors | null => {
-      if (!control.value) {
-        return isRequired ? { invalidPhone: 'Phone number is required.' } : null;
-      }
-      const strippedValue = control.value.replace(PATTERNS.NON_DECIMAL_DIGITS, '');
-      if (!PATTERNS.PHONE_REGEX.test(strippedValue)) {
-        return { invalidPhone: 'Phone number is invalid.' };
+
+      if (control.value) {
+        const strippedValue = control.value.replace(PATTERNS.NON_DECIMAL_DIGITS, '');
+        if (!PATTERNS.PHONE_REGEX.test(strippedValue)) {
+          return {invalidPhone: 'Phone number is invalid.'};
+        }
       }
 
       return null;
     };
   }
 
-  public validZipcode(isRequired?: boolean): ValidatorFn {
+  public validZipcode(): ValidatorFn {
     return (control: AbstractControl): ValidationErrors | null => {
-      if (!control.value) {
-        return isRequired ? { noValidZip: 'Zip Code is required.' } : null;
+      if (control.value) {
+        if (!PATTERNS.ZIPCODE_FULL_REGEX.test(control.value)) {
+          return {noValidZip: 'Zip Code is invalid.'};
+        }
       }
-      if (!PATTERNS.ZIPCODE_FULL_REGEX.test(control.value)) {
-        return {noValidZip: 'Zip Code is invalid.'};
-      }
-
       return null;
     };
   }

@@ -8,30 +8,24 @@
         <form [formGroup]="form">
           <div class="profile-split">
             <div class="profile-side">
-              <label class="profile-label" [ngClass]="{errorLabel: form.get('firstName')?.errors }">First Name*</label>
-              <input type="text" class="profile-inputs profile-input" formControlName="firstName">
-              <label class="profile-label" [ngClass]="{errorLabel: form.get('lastName')?.errors }">Last Name*</label>
-              <input type="text" class="profile-inputs profile-input" formControlName="lastName" >
-              <label class="profile-label" [ngClass]="{errorLabel: form.get('email')?.errors }">Email Address*</label>
-              <input type="text" class="profile-inputs profile-input" formControlName="email" >
-<!--              <app-role-type-selector [form]="form" [controlName]="'roleType'" *ngIf="title === titles.newUser ">-->
-<!--              </app-role-type-selector>-->
+              <app-control-text-input [form]="form" controlName="firstName" label="First Name"></app-control-text-input>
+              <app-control-text-input [form]="form" controlName="lastName" label="Last Name"></app-control-text-input>
+              <app-control-text-input [form]="form" controlName="email" label="Email"></app-control-text-input>
+              <app-control-role-type-selector [form]="form" [controlName]="'roleType'">
+              </app-control-role-type-selector>
             </div>
             <div class="profile-side-line"></div>
             <div class="profile-side">
-              <label class="profile-label" [ngClass]="{errorLabel: form.get('phone')?.errors }">Phone Number (including Area Code)</label>
+              <label class="profile-label" [ngClass]="{errorLabel: form.get('phone')?.errors  && form.get('phone')?.touched}">Phone Number (including Area Code)</label>
               <input
                 [name]="'phone'"
                 [formControlName]="'phone'"
                 [appTextMask]="'phone'"
                 [maskForm]="form"
                 [maskFormControlName]="'phone'"
-                [required]="true"
                 type="text" class="profile-inputs profile-input" formControlName="phone">
-              <label class="profile-label">Street Address</label>
-              <input type="text" class="profile-inputs profile-input" formControlName="street">
-              <label class="profile-label">City</label>
-              <input type="text" class="profile-inputs profile-input" formControlName="city">
+              <app-control-text-input [form]="form" controlName="street" label="Street Address"></app-control-text-input>
+              <app-control-text-input [form]="form" controlName="city" label="City"></app-control-text-input>
               <div class="profile-container-small">
                 <div class="profile-small-margin-right">
                   <label class="profile-label-small">State</label>
@@ -45,13 +39,12 @@
                   </select>
                 </div>
                 <div class="profile-small-margin-left">
-                  <label class="profile-label-small" [ngClass]="{errorLabel: form.get('zip')?.errors }">Zip</label>
+                  <label class="profile-label-small" [ngClass]="{errorLabel: form.get('zip')?.errors && form.get('zip')?.touched || null }">Zip</label>
                   <input
                     [name]="'zip'"
                     [appTextMask]="'zipCode'"
                     [maskForm]="form"
                     [maskFormControlName]="'zip'"
-                    [required]="true"
                     type="text" class="profile-zip-input" formControlName="zip">
                 </div>
               </div>

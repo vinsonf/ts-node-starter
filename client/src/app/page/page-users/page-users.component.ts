@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ApiService} from "../../services/api.service";
-import {ApiPostUsers} from "../../services/endpoints/user.requests";
+import {ApiPostUsers} from "../../services/endpoints/users.requests";
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
