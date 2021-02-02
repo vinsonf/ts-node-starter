@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="22px" viewBox="0 0 18 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>EB857E1A-E89A-4C61-AEF5-4AFAD42BD1C4</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.345098 0 0 0 0 0.549020 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="USER-DOCUMENTS-UPLOADING" transform="translate(-1038.000000, -28.000000)">
+            <g id="streamline-icon-alarm-bell@30x30" transform="translate(0.000000, -4.938260)" filter="url(#filter-1)">
+                <g transform="translate(1039.000000, 33.500000)">
+                    <path d="M6.33333333,18.125 C6.55073832,18.8655912 7.2302412,19.3742951 8.00208333,19.3742951 C8.77392546,19.3742951 9.45342835,18.8655912 9.67083333,18.125" id="Path" stroke="#000000" stroke-width="1.25"></path>
+                    <line x1="8" y1="2.5" x2="8" y2="0.625" id="Path" stroke="#000000" stroke-width="1.25"></line>
+                    <path d="M8,2.5 C11.4517797,2.5 14.25,5.29822031 14.25,8.75 C14.25,14.6216667 15.5,15.625 15.5,15.625 L0.5,15.625 C0.5,15.625 1.75,14.0283333 1.75,8.75 C1.75,5.29822031 4.54822031,2.5 8,2.5 Z" id="Path" stroke="#000000" stroke-width="1.25"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

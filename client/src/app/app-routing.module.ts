@@ -11,6 +11,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'navigate',
+    loadChildren: () =>
+      import('./page/page-navigate/page-navigate.module').then(
+        (m) => m.PageNavigateModule
+      ),
+  },
+  {
     path: '**',
     redirectTo: 'login',
   },

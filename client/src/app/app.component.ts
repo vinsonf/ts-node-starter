@@ -3,6 +3,7 @@ import {SocketService} from "./services/socket.service";
 import {CLIENT_MESSAGES} from "../../../shared/dist";
 import {ApiService} from "./services/api.service";
 import {ApiPostAuthLogin} from "./services/endpoints/auth.requests";
+import {RoutingService} from "./services/routing.service";
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ export class AppComponent {
   constructor(
     private socketService: SocketService,
     private apiService: ApiService,
+    private routingService: RoutingService,
   ) {
     this.socketService.setupConnection();
 

@@ -1,0 +1,71 @@
+<app-layout-table-container>
+        <div class="profile-header-container">
+          <div class="user-profile-circle">
+            <app-image-svg [image]="svgImages.floatingLogo"></app-image-svg>
+          </div>
+          <div class="profile-header-name">{{form.get('firstName')?.value}} {{form.get('lastName')?.value}}</div>
+        </div>
+        <form [formGroup]="form">
+          <div class="profile-split">
+            <div class="profile-side">
+              <label class="profile-label" [ngClass]="{errorLabel: form.get('firstName')?.errors }">First Name*</label>
+              <input type="text" class="profile-inputs profile-input" formControlName="firstName">
+              <label class="profile-label" [ngClass]="{errorLabel: form.get('lastName')?.errors }">Last Name*</label>
+              <input type="text" class="profile-inputs profile-input" formControlName="lastName" >
+              <label class="profile-label" [ngClass]="{errorLabel: form.get('email')?.errors }">Email Address*</label>
+              <input type="text" class="profile-inputs profile-input" formControlName="email" >
+<!--              <app-role-type-selector [form]="form" [controlName]="'roleType'" *ngIf="title === titles.newUser ">-->
+<!--              </app-role-type-selector>-->
+            </div>
+            <div class="profile-side-line"></div>
+            <div class="profile-side">
+              <label class="profile-label" [ngClass]="{errorLabel: form.get('phone')?.errors }">Phone Number (including Area Code)</label>
+              <input
+                [name]="'phone'"
+                [formControlName]="'phone'"
+                [appTextMask]="'phone'"
+                [maskForm]="form"
+                [maskFormControlName]="'phone'"
+                [required]="true"
+                type="text" class="profile-inputs profile-input" formControlName="phone">
+              <label class="profile-label">Street Address</label>
+              <input type="text" class="profile-inputs profile-input" formControlName="street">
+              <label class="profile-label">City</label>
+              <input type="text" class="profile-inputs profile-input" formControlName="city">
+              <div class="profile-container-small">
+                <div class="profile-small-margin-right">
+                  <label class="profile-label-small">State</label>
+                  <select formControlName="state" class="state-dropdown" #selectionRef>
+                    <option [selected]="true" [value]="">
+                      Please Select...
+                    </option>
+                    <option *ngFor="let state of statesAbbr" [value]="state.abbreviation">
+                      {{state.abbreviation}}
+                    </option>
+                  </select>
+                </div>
+                <div class="profile-small-margin-left">
+                  <label class="profile-label-small" [ngClass]="{errorLabel: form.get('zip')?.errors }">Zip</label>
+                  <input
+                    [name]="'zip'"
+                    [appTextMask]="'zipCode'"
+                    [maskForm]="form"
+                    [maskFormControlName]="'zip'"
+                    [required]="true"
+                    type="text" class="profile-zip-input" formControlName="zip">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="action-buttons-container" *ngIf="!disabled">
+          <button *ngIf="title === 'My Profile'" class="button-gray" (click)="edit(true)">CANCEL</button>
+          <button *ngIf="title !== 'My Profile'" class="button-gray" (click)="cancel()">CANCEL</button>
+          <div style="width: 25px"></div>
+          <button class="action-buttons" [ngClass]="{'button-blue': form.valid}" (click)="submit()" [disabled]="form.invalid">SAVE</button>
+        </div>
+        <div class="action-buttons-container" *ngIf="disabled">
+          <button class="button-gray" (click)="edit(false)">EDIT</button>
+        </div>
+
+</app-layout-table-container>

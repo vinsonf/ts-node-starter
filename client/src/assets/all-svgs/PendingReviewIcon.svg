@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="85px" viewBox="0 0 86 85" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>392784E2-1234-476B-A477-910261696B76</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.847000 0 0 0 0 0.847000 0 0 0 0 0.847000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="INFORMATION-MODAL" transform="translate(-935.000000, -289.000000)">
+            <g id="Group-4" transform="translate(227.000000, 246.120000)">
+                <g id="PendingReviewIcon" transform="translate(593.500000, 45.000000)" filter="url(#filter-1)">
+                    <g transform="translate(117.500000, 0.000000)">
+                        <g id="streamline-icon-common-file-search@45x45" transform="translate(18.269231, 15.880000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8125">
+                            <path d="M13.0625,36.96875 L3.21875,36.96875 C1.66544914,36.96875 0.40625,35.7095509 0.40625,34.15625 L0.40625,3.21875 C0.40625,1.66544914 1.66544914,0.40625 3.21875,0.40625 L23.148125,0.40625 C23.893526,0.40625 24.608378,0.702465785 25.135625,1.229375 L30.520625,6.614375 C31.0475342,7.14162198 31.34375,7.85647399 31.34375,8.601875 L31.34375,13.0625" id="Path"></path>
+                            <path d="M18.71375,28.53125 C18.71375,33.967803 23.120947,38.375 28.5575,38.375 C33.994053,38.375 38.40125,33.967803 38.40125,28.53125 C38.40125,23.094697 33.994053,18.6875 28.5575,18.6875 C23.120947,18.6875 18.71375,23.094697 18.71375,28.53125 Z" id="Path"></path>
+                            <line x1="42.59375" y1="42.59375" x2="35.5175" y2="35.49125" id="Path"></line>
+                        </g>
+                        <circle id="Oval" stroke="#D2014D" stroke-width="3.07692308" cx="39.7692308" cy="39.7692308" r="39.7692308"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

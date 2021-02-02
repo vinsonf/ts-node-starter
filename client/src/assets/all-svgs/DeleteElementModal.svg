@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>253867E4-838B-4DB6-A111-5341ECDBAF7F</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.847000 0 0 0 0 0.847000 0 0 0 0 0.847000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter id="filter-2">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.821813 0 0 0 0 0.004917 0 0 0 0 0.300477 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="INFORMATION-MODAL" transform="translate(-423.000000, -290.000000)">
+            <g id="Group-4" transform="translate(227.000000, 246.120000)">
+                <g id="DeleteElementModal" transform="translate(81.250000, 46.180000)" filter="url(#filter-1)">
+                    <g transform="translate(117.500000, 0.000000)">
+                        <g filter="url(#filter-2)" id="streamline-icon-bin-1@30x30" stroke-linecap="round" stroke-linejoin="round">
+                            <g transform="translate(17.461538, 19.230769)">
+                                <line x1="0.673076923" y1="6.8543956" x2="43.9423077" y2="6.8543956" id="Path" stroke="#000000" stroke-width="3.09065934"></line>
+                                <path d="M26.9436813,0.673076923 L17.6717033,0.673076923 C15.9647793,0.673076923 14.581044,2.05681224 14.581044,3.76373626 L14.581044,6.8543956 L30.0343407,6.8543956 L30.0343407,3.76373626 C30.0343407,2.05681224 28.6506053,0.673076923 26.9436813,0.673076923 Z" id="Path" stroke="#000000" stroke-width="3.09065934"></path>
+                                <line x1="17.6717033" y1="33.125" x2="17.6717033" y2="17.6717033" id="Path" stroke="#000000" stroke-width="3.09065934"></line>
+                                <line x1="26.9436813" y1="33.125" x2="26.9436813" y2="17.6717033" id="Path" stroke="#000000" stroke-width="3.09065934"></line>
+                                <path d="M36.4526099,41.1071429 C36.319684,42.7096133 34.9802269,43.9423077 33.3722527,43.9423077 L11.2451923,43.9423077 C9.63721816,43.9423077 8.29776102,42.7096133 8.16483516,41.1071429 L5.30906593,6.8543956 L39.3063187,6.8543956 L36.4526099,41.1071429 Z" id="Path" stroke="#000000" stroke-width="3.09065934"></path>
+                            </g>
+                        </g>
+                        <circle id="Oval" stroke="#D2014D" stroke-width="3.07692308" cx="39.7692308" cy="39.7692308" r="39.7692308"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

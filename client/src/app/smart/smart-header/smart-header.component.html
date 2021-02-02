@@ -1,0 +1,42 @@
+<div class="header-menu-container">
+  <div class="header-menu-left-container">
+    <div class="header-navigate-logo">
+      <app-image-svg [image]="svgImages.fullLogo"></app-image-svg>
+    </div>
+    <div class="header-menu-center-container">
+      <!-- <div class="header-menu-center-icons">
+        <app-image-svg [image]="svgImages.bellIcon"></app-image-svg>
+      </div> -->
+      <div class="header-menu-center-icons">
+        <a routerLink ="messages" class="header-links">
+          <app-image-svg [image]="svgImages.mailIcon"></app-image-svg>
+          <div class="header-notification" >
+            5
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="header-menu-right-container">
+    <div>
+      <div class="header-menu-right-username">firstName lastName</div>
+      <a  href="#" class="header-links">
+        <div class="header-menu-right-logout">
+          <div style="width: 20px; height: 20px;">
+            <app-image-svg [image]="svgImages.logoutIcon"></app-image-svg>
+          </div>
+          <div style="margin-left: 5px">
+            Log Out
+          </div>
+        </div>
+      </a>
+    </div>
+    <div>
+      <div class="header-menu-user-profile">
+        <a routerLink ="my-profile">
+          <app-image-svg [image]="svgImages.profileIcon"></app-image-svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div><p>smart-header works!</p>

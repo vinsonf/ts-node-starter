@@ -104,6 +104,7 @@ export class ApiService {
 
     if (headerType === 'none') {
       headers = headers.set('Content-Type', 'application/json; charset=utf-8');
+      headers = headers.set('Access-Control-Allow-Origin', '*');
       headers = headers.set('Accept', '*/*');
     }
 

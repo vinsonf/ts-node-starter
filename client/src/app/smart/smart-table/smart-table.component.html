@@ -1,0 +1,49 @@
+<div>
+
+  <table class="users-table">
+    <thead class="user-thead">
+    <tr class="users-table-row">
+      <ng-container *ngFor="let header of config.headers">
+        <th class="users-table-heading users-table-row-text-space" style="{{header.style}}">{{header.text}}</th>
+      </ng-container>
+
+    </tr>
+    </thead>
+    <tbody>
+            <ng-container *ngFor="let item of data;  let i = index;">
+              <tr class="users-table-row" [ngClass]="styleRow(i)">
+                <ng-container *ngFor="let header of config.headers">
+                  <ng-container *ngIf="header.field">
+                    <td class="property-gray-edit-button-text users-table-row-text-space" style="overflow: hidden">{{item[header.field]}}</td>
+                  </ng-container>
+
+                </ng-container>
+
+                <!-- <td class="property-gray-edit-button-text users-table-row-text-space" style="overflow: hidden">{{user.assignedDepartments[0]?.name}}</td> -->
+                <td class="property-gray-edit-button-text users-table-row-text-space">
+                  <div class="display-flex">
+<!--                    <div class="users-streamline-icon-bin-1-30-x-30" (click)="editUser(user)">-->
+<!--                      <div class="edit-trash-icons">-->
+<!--                        <app-present-svg [image]="svgImages.editIcon"></app-present-svg>-->
+<!--                      </div>-->
+<!--                    </div>-->
+                    <!-- <div class="users-streamline-icon-bin-1-30-x-30">
+                      <div class="edit-trash-icons">
+                        <app-present-svg [image]="svgImages.trashIcon"></app-present-svg>
+                      </div>
+                    </div> -->
+                  </div>
+                </td>
+              </tr>
+            </ng-container>
+    </tbody>
+  </table>
+  <hr>
+  <div class="display-flex justify-align-center page-button-container">
+    <div class="page-button-wrapper">
+      <!--          <ng-container *ngFor="let button of pageButtons$ | async">-->
+      <!--            <button (click)="selectPage(button.value)" [ngClass]="{ 'active-button-blue': button.selected, 'page-button': true }" [disabled]="button.disabled">{{button.text}}</button>-->
+      <!--          </ng-container>-->
+    </div>
+  </div>
+</div>

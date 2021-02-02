@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>F849A413-E342-4A1A-80A1-FF4A051AEF1D</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.454559 0 0 0 0 0.507187 0 0 0 0 0.595250 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="streamline-icon-arrow-right@20x20" transform="translate(-1379.000000, -239.000000)" filter="url(#filter-1)">
+            <g transform="translate(1379.000000, 240.000000)">
+                <line x1="0.625" y1="9" x2="19.375" y2="9" id="Path" stroke="#000000" stroke-width="1.25"></line>
+                <polyline id="Path" stroke="#000000" stroke-width="1.25" points="10.625 17.75 19.375 9 10.625 0.25"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

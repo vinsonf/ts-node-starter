@@ -8,10 +8,14 @@ import usersRouter from "../../routes/users";
 import {rootPath} from "../../root";
 import apiRouter from "../../routes/api";
 import {SERVER_MESSAGES} from "../../../../shared/dist";
+import cors from 'cors';
 export const app = Express();
 console.log(SERVER_MESSAGES);
 
 
+app.use(cors({origin: [
+        "http://localhost:4200"
+    ], credentials: true}));
 app.use(morgan('dev'));
 app.use(Express.json());
 app.use(Express.urlencoded({ extended: false }));

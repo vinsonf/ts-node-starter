@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="22px" viewBox="0 0 21 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>94B69FC2-640B-4E8F-909D-14EA4BB83030</title>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="NOTIFICATIONS-NEW" transform="translate(-861.000000, -319.000000)" stroke="#000000" stroke-width="1.25">
+            <g id="Group-2" transform="translate(846.250000, 283.512753)">
+                <g id="streamline-icon-calendar@20x20" transform="translate(15.000000, 36.500000)">
+                    <polygon id="Path" points="0.626666667 3.125 19.3766667 3.125 19.3766667 19.375 0.626666667 19.375"></polygon>
+                    <line x1="0.626666667" y1="8.125" x2="19.3766667" y2="8.125" id="Path"></line>
+                    <line x1="5.62666667" y1="5" x2="5.62666667" y2="0.625" id="Path"></line>
+                    <line x1="14.3766667" y1="5" x2="14.3766667" y2="0.625" id="Path"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

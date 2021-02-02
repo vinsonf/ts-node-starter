@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>8E53BF4B-641E-4AFA-BBA3-FE58AE3BF7A1</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.219608 0 0 0 0 0.650980 0 0 0 0 0.878431 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="streamline-icon-house-chimney-2@30x30" transform="translate(-303.000000, -165.000000)" filter="url(#filter-1)">
+            <g transform="translate(303.500000, 166.250000)">
+                <path d="M2.52673077,8.29432692 L2.52673077,13.8472115 L6.56519231,13.8472115 L6.56519231,9.80875 C6.56519231,9.25115482 7.01721251,8.79913462 7.57480769,8.79913462 L8.58442308,8.79913462 C9.14201826,8.79913462 9.59403846,9.25115482 9.59403846,9.80875 L9.59403846,13.8472115 L13.6325,13.8472115 L13.6325,8.29432692" id="Path" stroke="#000000" stroke-width="1.00961538"></path>
+                <path d="M0.5075,7.28471154 L7.36615385,0.426730769 C7.7604085,0.0325951584 8.39949534,0.0325951584 8.79375,0.426730769 L15.6517308,7.28471154" id="Path" stroke="#000000" stroke-width="1.00961538"></path>
+                <polyline id="Path" stroke="#000000" stroke-width="1.00961538" points="11.1084615 2.74144231 11.1084615 1.73182692 13.6325 1.73182692 13.6325 5.26548077"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

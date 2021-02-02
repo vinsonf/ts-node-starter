@@ -1,0 +1,9 @@
+<app-layout-form-single-column>
+
+  <app-control-text-input [form]="form" controlName="email" label="Email" ></app-control-text-input>
+  <app-control-text-input [form]="form" controlName="password" label="Password" ></app-control-text-input>
+
+  <div class="action-button-group">
+      <app-control-form-action-button label="sign in" (submitEmitter)="submit()"></app-control-form-action-button>
+  </div>
+</app-layout-form-single-column>

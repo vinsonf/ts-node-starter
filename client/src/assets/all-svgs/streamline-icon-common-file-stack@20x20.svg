@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="21px" viewBox="0 0 18 21" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>52B8845B-939C-4DA7-B3EB-84F8191BBB9C</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.219608 0 0 0 0 0.650980 0 0 0 0 0.878431 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="streamline-icon-common-file-stack@20x20" transform="translate(-32.000000, -493.000000)" filter="url(#filter-1)">
+            <g transform="translate(32.000000, 493.960000)">
+                <path d="M13.375,19.375 L2.125,19.375 C1.43464406,19.375 0.875,18.8153559 0.875,18.125 L0.875,4.375" id="Path" stroke="#000000" stroke-width="1.25"></path>
+                <path d="M15.875,16.875 L4.625,16.875 C3.93464406,16.875 3.375,16.3153559 3.375,15.625 L3.375,1.875" id="Path" stroke="#000000" stroke-width="1.25"></path>
+                <path d="M17.125,13.125 C17.125,13.8153559 16.5653559,14.375 15.875,14.375 L7.125,14.375 C6.43464406,14.375 5.875,13.8153559 5.875,13.125 L5.875,1.875 C5.875,1.18464406 6.43464406,0.625 7.125,0.625 L13.4825,0.625 C13.8137893,0.625 14.1315013,0.75665146 14.3658333,0.990833333 L16.7591667,3.38416667 C16.9933485,3.61849866 17.125,3.93621066 17.125,4.2675 L17.125,13.125 Z" id="Path" stroke="#000000" stroke-width="1.25"></path>
+            </g>
+        </g>
+    </g>
+</svg>

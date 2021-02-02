@@ -1,0 +1,18 @@
+<div class="page">
+
+  <div class="page-top">
+    <div class="page-title">{{(data$ | async)?.title}}</div>
+    <div class="add-item" *ngIf="(data$ | async)?.newButton" >
+      <div class="oval" (click)="addNew()">
+        <div class="path-2" >
+          <app-image-svg [image]="svgImages.addIcon"></app-image-svg>
+        </div>
+      </div>
+    </div>
+    <div >
+      <app-image-svg [image]="svgImages.smallHomeIcon"></app-image-svg>
+      <span class="page-path-text"> / {{(data$ | async)?.viewPath}}</span>
+    </div>
+  </div>
+  <ng-content></ng-content>
+</div>

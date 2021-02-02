@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="41px" viewBox="0 0 35 41" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>428C1CDC-96CF-4728-BB77-E58097C3ACA9</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.219608 0 0 0 0 0.650980 0 0 0 0 0.878431 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="streamline-icon-read-home-2@20x20" transform="translate(-628.000000, -421.000000)" filter="url(#filter-1)">
+            <g transform="translate(630.750000, 422.670391)">
+                <path d="M29.9999996,37.7516667 L3.75,37.7516667 C2.75514933,37.7516667 1.80106949,37.3563498 1.09776014,36.6527279 C0.394450792,35.949106 -0.000442155855,34.9948506 -4.26438078e-07,34 L-4.26438078e-07,34 C-4.26438078e-07,31.9289322 1.67893219,30.25 3.75,30.25 L27.4999996,30.25 C28.8807119,30.25 29.9999996,29.1307119 29.9999996,27.75 L29.9999996,2.75 C29.9999996,1.36928813 28.8807119,0.25 27.4999996,0.25 L3.26166667,0.25 C2.39633004,0.25 1.56645968,0.593867557 0.954730593,1.20590923 C0.343001506,1.8179509 -0.000442175079,2.64799682 -4.26438078e-07,3.51333333 L-4.26438078e-07,34" id="Path" stroke="#000000" stroke-width="2.5"></path>
+                <line x1="27.5" y1="30.2516667" x2="27.5" y2="37.7516667" id="Path" stroke="#000000" stroke-width="2.5"></line>
+                <polyline id="Path" stroke="#000000" stroke-width="2.5" points="20 13.585 20 22.7516667 10 22.7516667 10 13.585"></polyline>
+                <polyline id="Path" stroke="#000000" stroke-width="2.5" points="7.5 15.2516667 15 10.2516667 22.5 15.2516667"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

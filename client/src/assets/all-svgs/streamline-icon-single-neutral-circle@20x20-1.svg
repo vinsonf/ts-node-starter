@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="41px" viewBox="0 0 40 41" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>90871BBE-4881-44FC-A8D3-8E4B87B6A125</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.219608 0 0 0 0 0.650980 0 0 0 0 0.878431 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="streamline-icon-single-neutral-circle@20x20" transform="translate(-816.000000, -424.000000)" filter="url(#filter-1)">
+            <g transform="translate(817.000000, 425.500000)">
+                <path d="M10.25,15.25 C10.25,20.0824916 14.1675084,24 19,24 C23.8324916,24 27.75,20.0824916 27.75,15.25 C27.75,10.4175084 23.8324916,6.5 19,6.5 C14.1675084,6.5 10.25,10.4175084 10.25,15.25 L10.25,15.25 Z" id="Path" stroke="#000000" stroke-width="2.5"></path>
+                <path d="M30.5216667,33.7933333 C27.4725797,30.7250984 23.325621,28.9997631 19,28.9997631 C14.674379,28.9997631 10.5274203,30.7250984 7.47833333,33.7933333" id="Path" stroke="#000000" stroke-width="2.5"></path>
+                <path d="M0.25,19 C0.25,29.3553391 8.64466094,37.75 19,37.75 C29.3553391,37.75 37.75,29.3553391 37.75,19 C37.75,8.64466094 29.3553391,0.25 19,0.25 C8.64466094,0.25 0.25,8.64466094 0.25,19 Z" id="Path" stroke="#000000" stroke-width="2.5"></path>
+            </g>
+        </g>
+    </g>
+</svg>

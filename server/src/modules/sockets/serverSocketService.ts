@@ -1,7 +1,7 @@
 import {Server, Socket} from "socket.io";
 import {Server as HttpServer} from "http";
 import {CLIENT_MESSAGES, SERVER_MESSAGES} from "../../../../shared/dist";
-import {DbService} from "../db/dbService";
+import {DbService, dbService} from "../db/dbService";
 
 export class ServerSocketService {
     public io: Server;
@@ -10,7 +10,7 @@ export class ServerSocketService {
         sockets: {},
     }
     constructor(server: HttpServer) {
-        this.db = new DbService();
+        this.db = dbService;
         this.io = new Server(server, { cors: {
             origin: '*'
         }});

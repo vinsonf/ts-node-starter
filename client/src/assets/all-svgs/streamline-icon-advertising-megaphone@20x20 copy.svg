@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="41px" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>04C21C20-ABC1-4A2C-9970-57FB0C172CF9</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.219608 0 0 0 0 0.650980 0 0 0 0 0.878431 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="streamline-icon-advertising-megaphone@20x20-copy" transform="translate(-625.000000, -571.000000)" filter="url(#filter-1)">
+            <g transform="translate(626.746667, 573.100000)">
+                <path d="M15.105,25.4366667 C14.2036801,25.9180149 13.5309082,26.7381909 13.235117,27.7162406 C12.9393257,28.6942903 13.0448231,29.749838 13.5283333,30.65 L13.5383333,30.65 C14.549839,32.5317776 16.8922593,33.2418051 18.7783333,32.2383333 L19.36,31.9233333 C29.4716667,26.4766667 31.115,27.1316667 37.3333333,26.7116667 L30.0733333,13.08 C25.9083333,18.5566667 25.7483333,19.645 15.105,25.4366667 Z" id="Path" stroke="#000000" stroke-width="2.5"></path>
+                <path d="M18.1666667,23.74 L23.15,34.2883333 C24.1530292,36.1690148 26.4901205,36.8814062 28.3716667,35.88" id="Path" stroke="#000000" stroke-width="2.5"></path>
+                <line x1="20.6416667" y1="15.0833333" x2="20.6416667" y2="5.97" id="Path" stroke="#000000" stroke-width="2.5"></line>
+                <path d="M5.64166667,5.97 L5.64166667,17.5833333 C5.64166667,18.9640452 6.76095479,20.0833333 8.14166667,20.0833333 L15.6416667,20.0833333" id="Path" stroke="#000000" stroke-width="2.5"></path>
+                <path d="M25.6416667,10.47 L14.8083333,0.725 C13.8575441,-0.130791989 12.4141226,-0.130791989 11.4633333,0.725 L0.641666667,10.47" id="Path" stroke="#000000" stroke-width="2.5"></path>
+                <line x1="23.1416667" y1="8.22" x2="23.1416667" y2="1.33333333" id="Path" stroke="#000000" stroke-width="2.5"></line>
+            </g>
+        </g>
+    </g>
+</svg>

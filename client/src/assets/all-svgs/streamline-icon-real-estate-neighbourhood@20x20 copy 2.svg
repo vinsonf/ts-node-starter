@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="46px" viewBox="0 0 47 46" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>8FC824B3-6DD7-407A-81A1-F838557E3F85</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.219608 0 0 0 0 0.650980 0 0 0 0 0.878431 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="streamline-icon-real-estate-neighbourhood@20x20-copy-2" transform="translate(-1185.000000, -421.000000)" filter="url(#filter-1)">
+            <g transform="translate(1187.000000, 423.500000)">
+                <path d="M27.2432432,4.82432432 L27.2432432,14.2837838 C27.2432432,15.0674311 26.6079716,15.7027027 25.8243243,15.7027027 L17.3108108,15.7027027 C16.5271635,15.7027027 15.8918919,15.0674311 15.8918919,14.2837838 L15.8918919,4.82432432" id="Path" stroke="#000000" stroke-width="2.83783784"></path>
+                <polyline id="Path" stroke="#000000" stroke-width="2.83783784" points="13.0540541 7.18918919 21.5675676 0.0945945946 30.0810811 7.18918919"></polyline>
+                <path d="M40.0135135,30.3648649 L40.0135135,39.8243243 C40.0135135,40.6079716 39.3782419,41.2432432 38.5945946,41.2432432 L30.0810811,41.2432432 C29.2974338,41.2432432 28.6621622,40.6079716 28.6621622,39.8243243 L28.6621622,30.3648649" id="Path" stroke="#000000" stroke-width="2.83783784"></path>
+                <polyline id="Path" stroke="#000000" stroke-width="2.83783784" points="25.8243243 32.7297297 34.3378378 25.6351351 42.8513514 32.7297297"></polyline>
+                <path d="M14.472973,30.3648649 L14.472973,39.8243243 C14.472973,40.6079716 13.8377013,41.2432432 13.0540541,41.2432432 L4.54054054,41.2432432 C3.75689326,41.2432432 3.12162162,40.6079716 3.12162162,39.8243243 L3.12162162,30.3648649" id="Path" stroke="#000000" stroke-width="2.83783784"></path>
+                <polyline id="Path" stroke="#000000" stroke-width="2.83783784" points="0.283783784 32.7297297 8.7972973 25.6351351 17.3108108 32.7297297"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

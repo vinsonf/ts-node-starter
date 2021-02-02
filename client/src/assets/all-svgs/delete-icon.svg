@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="6 8 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <title>71A5F414-8F42-4BAB-9434-B2A3A20B1D98</title>
+  <defs>
+    <filter id="filter-2">
+      <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.219608 0 0 0 0 0.650980 0 0 0 0 0.878431 0 0 0 1.000000 0"></feColorMatrix>
+    </filter>
+  </defs>
+  <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <g id="Property-Details" transform="translate(-809.000000, -363.000000)">
+      <g id="Group" transform="translate(809.000000, 363.843480)">
+        <g id="Group-4">
+          <g filter="url(#filter-2)" id="streamline-icon-bin-1@30x30" stroke-linecap="round" stroke-linejoin="round">
+            <g transform="translate(10.000000, 10.500000)">
+              <line x1="0.625" y1="3.30357143" x2="19.375" y2="3.30357143" id="Path" stroke="#000000" stroke-width="1.33928571"></line>
+              <path d="M12.0089286,0.625 L7.99107143,0.625 C7.25140435,0.625 6.65178571,1.22461864 6.65178571,1.96428571 L6.65178571,3.30357143 L13.3482143,3.30357143 L13.3482143,1.96428571 C13.3482143,1.22461864 12.7485956,0.625 12.0089286,0.625 Z" id="Path" stroke="#000000" stroke-width="1.33928571"></path>
+              <line x1="7.99107143" y1="14.6875" x2="7.99107143" y2="7.99107143" id="Path" stroke="#000000" stroke-width="1.33928571"></line>
+              <line x1="12.0089286" y1="14.6875" x2="12.0089286" y2="7.99107143" id="Path" stroke="#000000" stroke-width="1.33928571"></line>
+              <path d="M16.1294643,18.1464286 C16.0718631,18.8408324 15.4914317,19.375 14.7946429,19.375 L5.20625,19.375 C4.5094612,19.375 3.92902978,18.8408324 3.87142857,18.1464286 L2.63392857,3.30357143 L17.3660714,3.30357143 L16.1294643,18.1464286 Z" id="Path" stroke="#000000" stroke-width="1.33928571"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

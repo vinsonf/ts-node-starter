@@ -27,6 +27,9 @@ export const User =  sequelize.define('user', {
     enable_notification: {
         type: DataTypes.BOOLEAN
     },
+    isActive: {
+        type: DataTypes.BOOLEAN
+    },
 }, {
 });
 

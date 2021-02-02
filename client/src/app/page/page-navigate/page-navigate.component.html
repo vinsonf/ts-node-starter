@@ -1,0 +1,19 @@
+
+  <div class="app-container-top">
+      <app-smart-header></app-smart-header>
+
+  </div>
+  <div class="app-container-bottom">
+    <app-smart-menu></app-smart-menu>
+    <div class="fill-flex-size">
+      <app-smart-page-title></app-smart-page-title>
+      <div>
+        <router-outlet>
+          <!--    <div style="margin-left: 250px" *ngIf="(account$ | async)?.user?.id"></div>-->
+        </router-outlet>
+      </div>
+    </div>
+
+  </div>
+
+

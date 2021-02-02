@@ -9,7 +9,7 @@ var ServerSocketService = /** @class */ (function () {
         this.data = {
             sockets: {},
         };
-        this.db = new dbService_1.DbService();
+        this.db = dbService_1.dbService;
         this.io = new socket_io_1.Server(server, { cors: {
                 origin: '*'
             } });

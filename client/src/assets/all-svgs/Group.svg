@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="41px" viewBox="0 0 92 41" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>71A5F414-8F42-4BAB-9434-B2A3A20B1D98</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <filter id="filter-2">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Property-Details" transform="translate(-809.000000, -363.000000)">
+            <g id="Group" transform="translate(809.000000, 363.843480)">
+                <g id="Group-5" transform="translate(52.000000, 0.000000)">
+                    <rect id="Rectangle" fill="#00588C" x="0" y="0" width="40" height="40" rx="3"></rect>
+                    <g filter="url(#filter-1)" id="streamline-icon-common-file-edit@20x20" stroke-linecap="round" stroke-linejoin="round">
+                        <g transform="translate(10.000000, 10.000000)">
+                            <path d="M18.8583333,12.3916667 L12.5,18.75 L9.375,19.375 L10,16.25 L16.3583333,9.89166667 C16.6887893,9.56069003 17.1372964,9.37470545 17.605,9.37470545 C18.0727036,9.37470545 18.5212107,9.56069003 18.8516667,9.89166667 L18.8583333,9.89833333 C19.18931,10.2287893 19.3752945,10.6772964 19.3752945,11.145 C19.3752945,11.6127036 19.18931,12.0612107 18.8583333,12.3916667 L18.8583333,12.3916667 Z" id="Path" stroke="#000000" stroke-width="1.25"></path>
+                            <path d="M6.875,16.875 L1.875,16.875 C1.18464406,16.875 0.625,16.3153559 0.625,15.625 L0.625,1.875 C0.625,1.18464406 1.18464406,0.625 1.875,0.625 L10.7325,0.625 C11.0637893,0.625 11.3815013,0.75665146 11.6158333,0.990833333 L14.0091667,3.38416667 C14.2433485,3.61849866 14.375,3.93621066 14.375,4.2675 L14.375,6.875" id="Path" stroke="#000000" stroke-width="1.25"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-4">
+                    <rect id="Rectangle-Copy" fill="#00588C" x="0" y="0" width="40" height="40" rx="3"></rect>
+                    <g filter="url(#filter-2)" id="streamline-icon-bin-1@30x30" stroke-linecap="round" stroke-linejoin="round">
+                        <g transform="translate(10.000000, 10.500000)">
+                            <line x1="0.625" y1="3.30357143" x2="19.375" y2="3.30357143" id="Path" stroke="#000000" stroke-width="1.33928571"></line>
+                            <path d="M12.0089286,0.625 L7.99107143,0.625 C7.25140435,0.625 6.65178571,1.22461864 6.65178571,1.96428571 L6.65178571,3.30357143 L13.3482143,3.30357143 L13.3482143,1.96428571 C13.3482143,1.22461864 12.7485956,0.625 12.0089286,0.625 Z" id="Path" stroke="#000000" stroke-width="1.33928571"></path>
+                            <line x1="7.99107143" y1="14.6875" x2="7.99107143" y2="7.99107143" id="Path" stroke="#000000" stroke-width="1.33928571"></line>
+                            <line x1="12.0089286" y1="14.6875" x2="12.0089286" y2="7.99107143" id="Path" stroke="#000000" stroke-width="1.33928571"></line>
+                            <path d="M16.1294643,18.1464286 C16.0718631,18.8408324 15.4914317,19.375 14.7946429,19.375 L5.20625,19.375 C4.5094612,19.375 3.92902978,18.8408324 3.87142857,18.1464286 L2.63392857,3.30357143 L17.3660714,3.30357143 L16.1294643,18.1464286 Z" id="Path" stroke="#000000" stroke-width="1.33928571"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

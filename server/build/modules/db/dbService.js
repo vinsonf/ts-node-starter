@@ -36,8 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.DbService = void 0;
-var trucks_model_1 = require("../models/trucks.model");
+exports.dbService = exports.DbService = void 0;
 var sequelizeConnection_1 = require("./sequelizeConnection");
 var user_model_1 = require("../models/user.model");
 var profile_model_1 = require("../models/profile.model");
@@ -51,20 +50,14 @@ profile_model_1.Profile.belongsTo(user_model_1.User);
 var DbService = /** @class */ (function () {
     // private db: Connection;
     function DbService() {
-        var _this = this;
         var uri = process.env.DB_URI || '';
-        // mongoose.connect(uri, {useNewUrlParser: true}).then(() => {
-        //     console.log('connected');
-        // });
-        // this.db = mongoose.connection;
-        // this.db.on('error', console.error.bind(console, 'connection error:'));
-        // this.db.once('open', function (){
-        //     console.log('connected')
-        // });
+    }
+    DbService.prototype.sync = function () {
+        var _this = this;
         sequelizeConnection_1.sequelize.sync({ force: true }).then(function () { return __awaiter(_this, void 0, void 0, function () {
             var _this = this;
             return __generator(this, function (_a) {
-                console.log('user added');
+                console.log('SYNC SUCCESS');
                 setTimeout(function () { return __awaiter(_this, void 0, void 0, function () {
                     var roleType, user, profile, users;
                     return __generator(this, function (_a) {
@@ -101,15 +94,33 @@ var DbService = /** @class */ (function () {
                 return [2 /*return*/];
             });
         }); });
-    }
+    };
     DbService.prototype.getTrucks = function () {
         console.log('getting trucks ');
         return new Promise(function (resolve, reject) {
-            trucks_model_1.Truck.find({}).then(function (trucks) {
-                resolve(trucks);
-            }).catch(function (e) { return reject(e); });
+            // Truck.find({}).then( trucks => {
+            //     resolve(trucks);
+            // }).catch((e) => reject(e))
+            resolve([]);
+        });
+    };
+    DbService.prototype.getUsers = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var users;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, user_model_1.User.findAll({
+                            include: [profile_model_1.Profile, role_type_model_1.RoleType],
+                        })];
+                    case 1:
+                        users = _a.sent();
+                        console.log('user', users);
+                        return [2 /*return*/, users];
+                }
+            });
         });
     };
     return DbService;
 }());
 exports.DbService = DbService;
+exports.dbService = new DbService();

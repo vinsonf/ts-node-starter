@@ -29,4 +29,7 @@ exports.User = sequelizeConnection_1.sequelize.define('user', {
     enable_notification: {
         type: sequelize_1.DataTypes.BOOLEAN
     },
+    isActive: {
+        type: sequelize_1.DataTypes.BOOLEAN
+    },
 }, {});

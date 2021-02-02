@@ -14,8 +14,12 @@ var users_1 = __importDefault(require("../../routes/users"));
 var root_1 = require("../../root");
 var api_1 = __importDefault(require("../../routes/api"));
 var dist_1 = require("../../../../shared/dist");
+var cors_1 = __importDefault(require("cors"));
 exports.app = express_1.default();
 console.log(dist_1.SERVER_MESSAGES);
+exports.app.use(cors_1.default({ origin: [
+        "http://localhost:4200"
+    ], credentials: true }));
 exports.app.use(morgan_1.default('dev'));
 exports.app.use(express_1.default.json());
 exports.app.use(express_1.default.urlencoded({ extended: false }));

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="31px" viewBox="0 0 44 31" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>9BC7BA63-ADA2-4DE9-9F1B-813C581CDB91</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.219608 0 0 0 0 0.650980 0 0 0 0 0.878431 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="streamline-icon-envelope@20x20" transform="translate(-436.000000, -426.000000)" filter="url(#filter-1)">
+            <g transform="translate(437.666667, 427.670391)">
+                <polygon id="Path" stroke="#000000" stroke-width="2.67857143" points="0.339285714 0.607142857 40.5178571 0.607142857 40.5178571 27.3928571 0.339285714 27.3928571"></polygon>
+                <line x1="27.0125" y1="10.3839286" x2="33.8214286" y2="16.6785714" id="Path" stroke="#000000" stroke-width="2.67857143"></line>
+                <line x1="13.8446429" y1="10.3839286" x2="7.03571429" y2="16.6785714" id="Path" stroke="#000000" stroke-width="2.67857143"></line>
+                <path d="M39.8571429,1.525 L22.8696429,13.2392857 C21.4003509,14.2537235 19.456792,14.2537235 17.9875,13.2392857 L1,1.525" id="Path" stroke="#000000" stroke-width="2.67857143"></path>
+            </g>
+        </g>
+    </g>
+</svg>

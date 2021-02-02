@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="16px" viewBox="0 0 21 16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>D22D100A-1D3F-4A5D-BCEB-B5601AC602AF</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.345098 0 0 0 0 0.549020 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="CHECKLIST-BUILDER" transform="translate(-1111.000000, -31.000000)">
+            <g id="streamline-icon-envelope@20x20" transform="translate(0.000000, -4.938260)" filter="url(#filter-1)">
+                <g transform="translate(1111.189453, 36.500000)">
+                    <polygon id="Path" stroke="#000000" stroke-width="1.25" points="0.625 0.75 19.375 0.75 19.375 13.25 0.625 13.25"></polygon>
+                    <line x1="13.0725" y1="5.3125" x2="16.25" y2="8.25" id="Path" stroke="#000000" stroke-width="1.25"></line>
+                    <line x1="6.9275" y1="5.3125" x2="3.75" y2="8.25" id="Path" stroke="#000000" stroke-width="1.25"></line>
+                    <path d="M19.0666667,1.17833333 L11.1391667,6.645 C10.4534971,7.11840432 9.54650291,7.11840432 8.86083333,6.645 L0.933333333,1.17833333" id="Path" stroke="#000000" stroke-width="1.25"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

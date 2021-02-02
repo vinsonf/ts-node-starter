@@ -25,6 +25,8 @@ console.log(process.env.DB_URI, 'uri');
 var app_1 = require("./modules/core/app");
 var http = __importStar(require("http"));
 var serverSocketService_1 = require("./modules/sockets/serverSocketService");
+var dbService_1 = require("./modules/db/dbService");
+dbService_1.dbService.sync();
 var port = normalizePort(process.env.PORT || '3000');
 app_1.app.set('port', port);
 var server = http.createServer(app_1.app);
